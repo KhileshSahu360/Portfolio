@@ -1,0 +1,102 @@
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+nav{
+  height: 4rem;
+  width: 100%;
+  background-image: linear-gradient(
+  180deg,
+  hsl(210deg 56% 93%) 0%,
+  hsl(211deg 56% 94%) 10%,
+  hsl(212deg 56% 94%) 19%,
+  hsl(213deg 56% 95%) 28%,
+  hsl(214deg 56% 96%) 37%,
+  hsl(215deg 56% 96%) 47%,
+  hsl(216deg 56% 97%) 57%,
+  hsl(218deg 56% 98%) 69%,
+  hsl(219deg 57% 98%) 82%,
+  hsl(220deg 60% 99%) 100%
+);
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+} 
+nav .logo label{
+  color: #08203a;
+}
+nav ul{
+  list-style-type: none;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #08203a;
+  align-items: center;
+}
+ul li{
+  font-size: .6rem;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li::after{
+  content: "";
+  display: block;
+  border-bottom: 2px solid #e6027d; /* Initially transparent */
+  position: absolute;
+  bottom: 0;
+  left: 0%; /* Aligns the border to the center */
+  width: 0%;
+  transition: width 0.3s; 
+}
+ul li:hover::after {
+  width: 100%; /* Expands the border to 100% on hover */
+  /* left: 100%; Centers the expanded border */
+}
+.lets_chat button{
+  color: white;
+  background-color: #08203a;
+  border: none;
+  font-weight: 500;
+  padding: .5rem 1.4rem .5rem .7rem;
+  border-radius: 5px;
+  font-size: .6rem;
+  border: 1px solid #08203a;
+  position: relative;
+  cursor: pointer;
+}
+.lets_chat button .msg_icon{
+  position: absolute;
+  top: 19%;
+  right: 9%;
+  padding-top: 5px;
+  box-sizing: content-box;
+}
+.lets_chat button:hover{
+  background-color: white;
+  color: #08203a;
+  transition: 200ms all;
+  border: 1px solid #08203a;
+}
+.menu_bar{
+  display: none;
+}
+@media screen and (max-width:600px) {
+  .menu_bar{
+    display: block;
+  }
+  .lets_chat{
+    display: none;
+  }
+  nav ul{
+    display: none !important;
+  }
+  nav{
+    justify-content: space-between !important;
+  }
+  nav .logo{
+    padding: 1.5rem;
+  }
+}

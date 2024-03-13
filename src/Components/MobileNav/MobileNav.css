@@ -1,0 +1,33 @@
+* {
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+
+}
+
+@media screen and (max-width:600px) {
+          ul {
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+          }
+
+          ul li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: centers;
+                    font-size: 1.3rem !important;
+          }
+
+          ul li div a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .5rem;
+                    color: #08203a;
+          }
+
+}

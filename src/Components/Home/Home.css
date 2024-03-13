@@ -1,5 +1,5 @@
 .home{
-  height: 500px;
+  height: 90vh;
   width: 100%;
   background-image: linear-gradient(
   80deg,
@@ -124,6 +124,58 @@ z-index: 100;
   color: #08203a;
   font-weight: 600;
 }
+@media screen and (max-width:2000px) {
+  html{
+      font-size: 130%;
+  }
+  .sahu{
+      bottom: -107% !important;
+  }
+  .second{
+      margin-left: 7rem !important;
+  }
+  .react_cont{
+      width: 8rem !important;
+  }
+  .third .react_cont label {
+      top: 10%;
+  }
+  .bootstrap{
+      height: 6rem !important;
+      left: 15% !important;
+  }
+  .icon>img:nth-child(1){
+      height: 10rem !important;
+  }
+  .img_div img{
+      width: 20rem !important;
+  }
+  
+}
+@media screen and (max-width:1200px) {
+  html{
+      font-size: 110%;
+  }
+  .sahu{
+      bottom: -84% !important;
+  }
+
+  .react_cont{
+      width: 9rem !important;
+  }
+  .bootstrap{
+      height: 5rem !important;
+      left: 12% !important;
+  }
+  .icon>img:nth-child(1){
+      height: 8rem !important;
+  }
+  .img_div img{
+      width: 20rem !important;
+  }
+  
+}
+
 @media screen and (max-width:1000px) {
   .icon>img:nth-child(1){
     height: 100px !important;
@@ -138,8 +190,16 @@ z-index: 100;
     font-size: 90%;
   }
   .first .sahu{
-    bottom: -45%;
+    bottom: -45% !important;
   }
+  .sahu{
+    bottom: -84% !important;
+}
+.second{
+  margin-left: 5rem !important;
+}
+
+
   
 }
 @media screen and (max-width:850px) {
@@ -158,16 +218,22 @@ z-index: 100;
     font-size: 80%;
   }
   .first .sahu{
-    bottom: -40%;
+    bottom: -32% !important;
   }
-  
+  .react_cont{
+    width: 10rem !important;
+    top: -30% !important;
+  }
+  .react_cont label{
+    top: 25% !important;
+  }
 }
 @media screen and (max-width:750px) {
   html{
     font-size: 75%;
   }
   .first .sahu{
-    bottom: -25%;
+    bottom: -25% !important;
   }
   .img_div img{
     width: 25rem !important;
@@ -188,7 +254,7 @@ z-index: 100;
     font-size: 70%;
   }
   .first .sahu{
-    bottom: -25%;
+    bottom: -25% !important;
   }
   .img_div img{
     width: 23rem !important;
@@ -219,17 +285,20 @@ z-index: 100;
   html{
     font-size: 65%;
   }  
+  .first .sahu{
+    bottom: -10% !important;
+  }
 }
 @media screen and (max-width:600px) {
   html{
-    font-size: 100%;
+    font-size: 105%;
   }
   .first{
     display: none;
   }
   .home{
     grid-template-columns:1fr ;
-    gap: 5rem;
+    gap: 2rem;
     height: 800px;
     padding: 0rem 2rem;
   }
@@ -247,5 +316,59 @@ z-index: 100;
   .bootstrap{
     bottom: 0% !important;
     left: 7% !important;
+  }
+  .second{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width:500px) {
+  html{
+    font-size: 100%;
+  }
+  .icon>img:nth-child(1) {
+    top: -10% !important;
+    left: 0% !important;
+  }
+  .react_cont{
+    top: -18% !important;
+    right: 0% !important;
+  }
+  .bootstrap{
+    bottom: 0% !important;
+    left: 3% !important;
+  }
+}
+@media screen and (max-width:450px) {
+  html{
+    font-size: 90%;
+  }
+}
+@media screen and (max-width:425px) {
+  html{
+    font-size: 85%;
+  }
+}
+@media screen and (max-width:400px) {
+  html{
+    font-size: 80%;
+  }
+  .icon>img:nth-child(1) {
+    top: -20% !important;
+    left: 0% !important;
+  }
+  .react_cont{
+    top: -28% !important;
+    right: 0% !important;
+  }
+  .bootstrap{
+    bottom: -10% !important;
+    left: 10% !important;
+  }
+}
+@media screen and (max-width:350px) {
+  html{
+    font-size: 75%;
   }
 }

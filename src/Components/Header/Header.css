@@ -99,4 +99,7 @@ ul li:hover::after {
   nav .logo{
     padding: 1.5rem;
   }
+  .logo label{
+    font-size: 1.5rem;
+  }
 }

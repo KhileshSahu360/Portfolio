@@ -7,11 +7,12 @@ import Home from './Components/Home/Home';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Skills from './Components/Skills/Skills';
 import Services from './Components/Services/Services';
+import ButtonData from './Components/Data/Data';
 
 
 const App = () => {
   return (
-    <div>
+    <ButtonData>
       <Header/>
       <Element name="Home">
         <Home />
@@ -31,7 +32,7 @@ const App = () => {
       <Element name="Contact">
         <Contact />
       </Element>
-    </div>
+    </ButtonData>
   );
 };
 

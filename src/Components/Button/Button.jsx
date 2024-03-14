@@ -1,16 +1,10 @@
 import React from 'react'
 import './Button.css'
-import { FaDownload } from "react-icons/fa";
 
-const ColorButton = ({btnName}) => {
+const Button = ({btnName,style,component,handleClick}) => {
+  // const hireBtn = useContext(ButtonContext)
   return (
-    <button className='hire_btn'>{btnName}</button>
+    <button style={style} className='hire_btn' onClick={()=>handleClick(btnName)}>{btnName} {component}</button>
   )
 }
-const WaterButton =({btnName}) =>{
-  return(
-    <button className='download_btn'>{btnName}<FaDownload /></button>
-  )
-}
-export default ColorButton
-export{WaterButton}
+export default Button

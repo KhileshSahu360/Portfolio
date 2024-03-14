@@ -124,14 +124,22 @@ z-index: 100;
   color: #08203a;
   font-weight: 600;
 }
+@media screen and (max-width:1350px){
+  html{
+    font-size: 110%;
+  }
+  .sahu{
+    bottom: -85% !important;
+  }
+}
 @media screen and (max-width:2000px) {
   html{
       font-size: 130%;
   }
   .sahu{
       bottom: -107% !important;
-  }
-  .second{
+    }
+    .second{
       margin-left: 7rem !important;
   }
   .react_cont{
@@ -149,9 +157,10 @@ z-index: 100;
   }
   .img_div img{
       width: 20rem !important;
-  }
+    }
   
 }
+
 @media screen and (max-width:1200px) {
   html{
       font-size: 110%;
@@ -174,6 +183,60 @@ z-index: 100;
       width: 20rem !important;
   }
   
+}
+@media screen and (max-width:1600px){
+  html{
+    font-size:110%;
+  }
+  .first .sahu{
+    bottom: -80% !important;
+  }
+}
+@media screen and (max-width:1400px){
+  html{
+    font-size:110%;
+  }
+  .first .sahu{
+    bottom: -75% !important;
+  }
+  .react_cont{
+    width:10rem !important;
+  }
+}
+@media screen and (max-width:1300px){
+  html{
+    font-size:105%;
+  }
+  .first .sahu{
+    bottom: -70% !important;
+  }
+  .react_cont{
+    width:10rem !important;
+  }
+}
+@media screen and (max-width:1200px){
+  html{
+    font-size:100%;
+  }
+  .first .sahu{
+    bottom: -70% !important;
+  }
+}
+@media screen and (max-width:1100px){
+  html{
+    font-size:100%;
+  }
+  .first .sahu{
+    bottom: -70% !important;
+  }
+}
+@media screen and (max-width:1050px){
+  html{
+    font-size:95%;
+  }
+  .first .sahu{
+    bottom: -40% !important;
+  }
 }
 
 @media screen and (max-width:1000px) {
@@ -215,10 +278,10 @@ z-index: 100;
 }
 @media screen and (max-width:800px) {
   html{
-    font-size: 80%;
+    font-size: 75%;
   }
   .first .sahu{
-    bottom: -32% !important;
+    bottom: -30% !important;
   }
   .react_cont{
     width: 10rem !important;
@@ -230,7 +293,7 @@ z-index: 100;
 }
 @media screen and (max-width:750px) {
   html{
-    font-size: 75%;
+    font-size: 60%;
   }
   .first .sahu{
     bottom: -25% !important;
@@ -298,7 +361,7 @@ z-index: 100;
   }
   .home{
     grid-template-columns:1fr ;
-    gap: 2rem;
+    gap: 6rem !important;
     height: 800px;
     padding: 0rem 2rem;
   }

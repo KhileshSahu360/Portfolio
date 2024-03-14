@@ -1,14 +1,17 @@
 import React from 'react'
 import './Home.css'
-import ColorButton from '../Button/Button'
-import { WaterButton } from '../Button/Button'
+import Button from '../Button/Button'
+// import { WaterButton } from '../Button/Button'
 import Avatar from '../../assets/Image/Avatar.png'
 import GlassyEmoji from '../../assets/Icon/GlassyEmoji.png'
 import ReactIcon from '../../assets/Icon/React.svg'
 import BootstrapIcon from '../../assets/Icon/BootstrapIcon.svg'
+import { useData } from '../Data/Data'
+import { FaDownload } from "react-icons/fa";
+
 
 const Home = () => {
-  
+  const {data} = useData();
   return (
     <div className='home'>
       <div className="first">
@@ -26,8 +29,10 @@ const Home = () => {
               Welcome to my portfolio! I'm a MERN stack developer passionate about creating dynamic and user-friendly web applications.
           </label>
           <div className="button_grp">
-            <ColorButton btnName={'Hire Me'}/>
-            <WaterButton btnName={'Download CV'}/>
+           
+              <Button style={data.gradientBtn} btnName={'Hire Me'}/>
+              <Button style={data.waterBtn} btnName={'Download CV'} component={<FaDownload />}/>
+           
           </div>
 
       </div>

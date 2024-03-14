@@ -19,6 +19,8 @@ import { MdOutlineWeb } from "react-icons/md";
 import { AiFillProject } from "react-icons/ai";
 import { IoLayers } from "react-icons/io5";
 import { MdOutlineContactPhone } from "react-icons/md";
+import { BiSolidMessageRoundedDots } from "react-icons/bi";
+
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -71,6 +73,9 @@ export default function TemporaryDrawer() {
       
         {/* ))} */}
         </ul>
+        <div className="lets_chat" style={{display:'block'}}>
+          <button style={{textAlign:'center'}}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></button>
+      </div>
       </List>
     </Box>
   );

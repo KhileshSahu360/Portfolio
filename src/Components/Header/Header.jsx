@@ -12,7 +12,6 @@ const Navigation = () => {
       if (scrollPosition > 10) {
         setSelected('Home') // Change the color to red when scroll position is greater than 200 pixels
       }
-      console.log(scrollPosition);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -47,7 +46,7 @@ const Navigation = () => {
         </li>
       </ul>
       <div className="lets_chat">
-        <button style={{textAlign:'center'}}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></button>
+        <button style={{textAlign:'center'}}><Link to="Contact" smooth={true} duration={500}  onClick={()=>setSelected('Contact')}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></Link></button>
       </div>
       <div className="menu_bar">
           <TemporaryDrawer style={{color:' red'}}/>

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Rowdies:wght@300;400;700&display=swap');
+.skills{
+  height: auto;
+  padding: 0 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 100%;
+  background-image: linear-gradient(
+    40deg,
+  hsl(210deg 56% 93%) 0%,
+  hsl(210deg 56% 93%) 11%,
+  hsl(210deg 56% 93%) 21%,
+  hsl(210deg 56% 93%) 31%,
+  hsl(210deg 56% 93%) 41%,
+  hsl(210deg 56% 93%) 51%,
+  hsl(210deg 56% 93%) 62%,
+  hsl(210deg 56% 93%) 73%,
+  hsl(210deg 56% 93%) 85%,
+  hsl(210deg 56% 93%) 100%
+);
+}
+.sk_top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sk_middle{
+  display: grid;
+  width: 75%;
+  margin-bottom: 2rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+.sm_left{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sm_right{
+  width: 290px;
+  border-radius: 50%;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -4px 10px 0px rgb(255, 255, 255),3px 2px 10px -3px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    90deg,
+    hsl(210deg 56% 93%) 0%,
+    hsl(211deg 56% 94%) 15%,
+    hsl(212deg 56% 94%) 31%,
+    hsl(213deg 56% 95%) 48%,
+    hsl(214deg 56% 96%) 63%,
+    hsl(215deg 56% 96%) 75%,
+    hsl(216deg 56% 97%) 84%,
+    hsl(218deg 56% 98%) 91%,
+    hsl(219deg 57% 98%) 96%,
+    hsl(220deg 60% 99%) 100%
+  );
+  position: relative;
+}
+.sm_right span{
+  font-size: 1.5rem;
+}
+.sm_right .mern_m{
+  color: green;
+}
+.sm_right .mern_r{
+  color: rgb(14, 185, 185);
+}
+.sm_right .mern_n{
+  color: rgb(112, 168, 27);
+}
+.sm_right .mernicon{
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  box-shadow: -2px -4px 10px 0px rgb(255, 255, 255),3px 2px 10px -3px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    90deg,
+    hsl(210deg 56% 93%) 0%,
+    hsl(211deg 56% 94%) 15%,
+    hsl(212deg 56% 94%) 31%,
+    hsl(213deg 56% 95%) 48%,
+    hsl(214deg 56% 96%) 63%,
+    hsl(215deg 56% 96%) 75%,
+    hsl(216deg 56% 97%) 84%,
+    hsl(218deg 56% 98%) 91%,
+    hsl(219deg 57% 98%) 96%,
+    hsl(220deg 60% 99%) 100%
+  );
+}
+.m_icon{
+  top: 36.55%;
+  left: -14%;
+}
+.e_icon{
+  top: -14%;
+  left: 36.55%;
+}
+.r_icon{
+  right: -14%;
+  top: 36.55%;
+}
+.n_icon{
+  bottom: -14%;
+  left: 36.55%;
+}
+
+
+.sm_left>div{
+  display: flex;
+  justify-content: flex-start;
+  gap: .5rem;
+}
+.sm_left>div label{
+  font-size: .7rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+.sk_bottom{
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+}
+.sk_bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+.sk_bottom .title_field .title{
+  font-size: .9rem;
+}
+
+
+/* Accordion  CSS*/
+.accordion{
+  width: 300px;
+  box-shadow : -2px -2px 10px 0px rgb(255, 255, 255),3px 2px 10px -3px rgba(0, 0, 0, 0.5);
+  padding: .8rem 2.2rem;
+  background-image: linear-gradient(120deg,hsl(220deg 60% 99%) 0%,hsl(219deg 58% 99%) 13%,hsl(219deg 58% 98%) 24%,hsl(218deg 57% 98%) 34%,hsl(218deg 57% 98%) 42%,hsl(217deg 56% 98%) 49%,hsl(217deg 56% 97%) 56%,hsl(216deg 56% 97%) 61%,hsl(216deg 56% 97%) 66%,hsl(215deg 56% 96%) 71%,hsl(215deg 56% 96%) 75%,hsl(214deg 56% 96%) 79%,hsl(214deg 56% 96%) 83%,hsl(213deg 56% 95%) 86%,hsl(213deg 56% 95%) 88%,hsl(212deg 56% 95%) 91%,hsl(212deg 56% 94%) 93%,hsl(211deg 56% 94%) 95%,hsl(211deg 56% 94%) 97%,hsl(210deg 56% 93%) 99%,hsl(210deg 56% 93%) 100%);
+  border-radius: 10px !important;
+  height: auto;
+  padding: 0px auto !important;
+}
+.title_field{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.MuiAccordionDetails-root p{
+  font-size: .7rem;
+  color: rgb(94, 92, 92);
+  font-weight: 600;
+  font-family: "Poppins";
+}
+@media screen and (max-width:1250px) {
+  .sm_right .mernicon{
+    height: 80px;
+    width: 80px;
+  }
+  .sm_right{
+    width: 280px;
+    height: 280px;
+  }
+  
+}
+@media screen and (max-width:1000px) {
+  .sk_middle{
+    gap: 4rem;
+    width: 85%;
+  }
+  .accordion{
+    width: 270px;
+  }
+  .MuiAccordionDetails-root p{
+    font-size: .7rem;
+  }
+  .title_field label{
+    font-size: .9rem !important;
+  }
+}
+@media screen and (max-width:900px) {
+  .accordion{
+    width: 240px;
+  }
+  .title_field label{
+    font-size: .8rem !important;
+  }
+  .sm_right .mernicon{
+    height: 70px;
+    width: 70px;
+  }
+  .sm_right{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width:800px) {
+  .accordion{
+    width: 220px;
+  }
+  .title_field label{
+    font-size: .9rem !important;
+  }
+}
+@media screen and (max-width:700px) {
+  .accordion{
+    width: 200px;
+    height: auto;
+  }
+  .title_field label{
+    font-size: .8rem !important;
+  }
+  .sm_right .mernicon{
+    height: 60px;
+    width: 60px;
+  }
+  .sm_right{
+    width: 230px;
+    height: 230px;
+  }
+}
+@media screen and (max-width:630px) {
+  .accordion{
+    width: 180px;
+  }
+}
+@media screen and (max-width:600px) {
+  .sk_middle{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .sm_right{
+    justify-self: center;
+  }
+  .sm_left>div label{
+    font-size: .8rem;
+  }
+  .sk_bottom{
+    grid-template-columns: 1fr 1fr;
+  }
+  .accordion{
+    width: 230px;
+  }
+  .title_field label{
+    font-size: .7rem !important;
+  }
+}
+@media screen and (max-width:500px) {
+  .accordion{
+    width: 210px;
+  }
+  .sm_left>div svg{
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width:450px) {
+  .accordion{
+    width: 190px;
+  }
+}
+@media screen and (max-width:415px) {
+  .accordion{
+    width: 170px;
+  }
+}
+@media screen and (max-width:350px) {
+  .accordion{
+    width: 140px;
+  }
+  .sm_right{
+    width: 180px;
+    height: 180px;
+  }
+}

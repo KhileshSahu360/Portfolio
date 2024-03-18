@@ -1,0 +1,73 @@
+.footer{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -4px 10px 0px rgba(180, 178, 178, 0.151),3px 2px 10px -3px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+  80deg,
+  hsl(210deg 56% 93%) 0%,
+  hsl(211deg 56% 93%) 4%,
+  hsl(211deg 56% 94%) 10%,
+  hsl(212deg 56% 94%) 18%,
+  hsl(212deg 56% 95%) 26%,
+  hsl(213deg 56% 95%) 35%,
+  hsl(214deg 56% 96%) 44%,
+  hsl(214deg 56% 96%) 52%,
+  hsl(215deg 56% 96%) 61%,
+  hsl(216deg 56% 97%) 69%,
+  hsl(216deg 56% 97%) 76%,
+  hsl(217deg 56% 98%) 82%,
+  hsl(218deg 57% 98%) 88%,
+  hsl(218deg 57% 98%) 93%,
+  hsl(219deg 58% 99%) 97%,
+  hsl(220deg 60% 99%) 100%
+);
+}
+.footer .content{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  align-items: center;
+}
+.content label{
+  font-size: .7rem;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+.footer .content>label:nth-child(1){
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--pink-color);
+  margin-bottom: .5rem;
+}
+.social_icon{
+  margin-top: .5rem;
+  display: flex;
+  gap: .7rem;
+}
+.scl_icon{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.linkedin{
+  color: rgb(0, 119, 255);
+}
+.github{
+  color: var(--dark-color);
+}
+.instagram{
+  display: inline-block;
+  color: #ee2a7b;
+}
+.footer .content .wrights{
+  margin-top: 1.5rem;
+}
+@media screen and (max-width:600px) {
+  .footer .content label{
+    font-size: .5rem;
+    /* padding: 1rem 0 !important; */
+  }
+  
+}

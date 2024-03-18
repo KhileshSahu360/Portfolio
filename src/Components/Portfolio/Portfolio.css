@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Rowdies:wght@300;400;700&display=swap');
+.portfolio{
+  height: auto;
+  padding-bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 100%;
+  background-image: linear-gradient(
+    40deg,
+  hsl(210deg 56% 93%) 0%,
+  hsl(210deg 56% 93%) 11%,
+  hsl(210deg 56% 93%) 21%,
+  hsl(210deg 56% 93%) 31%,
+  hsl(210deg 56% 93%) 41%,
+  hsl(210deg 56% 93%) 51%,
+  hsl(210deg 56% 93%) 62%,
+  hsl(210deg 56% 93%) 73%,
+  hsl(210deg 56% 93%) 85%,
+  hsl(210deg 56% 93%) 100%
+);
+}
+.p_top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+}
+.p_bottom{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+/* Project Card Design */
+
+.project_card{
+  height: auto;
+  justify-content: space-between;
+  max-width: 460px;
+  padding: 1rem .8rem;
+  border-radius: 8px;
+  display: flex;
+  gap: .5rem;
+  box-shadow: -2px -4px 10px 0px rgb(255, 255, 255),3px 2px 10px -3px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    90deg,
+    hsl(210deg 56% 93%) 0%,
+    hsl(211deg 56% 94%) 15%,
+    hsl(212deg 56% 94%) 31%,
+    hsl(213deg 56% 95%) 48%,
+    hsl(214deg 56% 96%) 63%,
+    hsl(215deg 56% 96%) 75%,
+    hsl(216deg 56% 97%) 84%,
+    hsl(218deg 56% 98%) 91%,
+    hsl(219deg 57% 98%) 96%,
+    hsl(220deg 60% 99%) 100%
+  );
+
+}
+.PC_left{
+  flex:7;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  position: relative;
+}
+.PC_right{
+  flex:3;
+}
+.PC_left .name label{
+  padding: .3rem .5rem;
+  color: gray;
+  font-size: .5rem;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 3px 3px 5px 0px rgba(19, 17, 17, 0.068) inset,5px 5px 10px  rgba(253, 253, 253, 0.5);
+}
+.PC_left .p_title label{
+  color: var(--dark-color);
+  font-weight: 800;
+  font-size: 1rem;
+}
+.PC_left .p_descr span{
+  font-size: .7rem;
+  display: inline-block;
+  /* margin-top: .5rem; */
+  font-weight: 600;
+  color: rgb(167, 161, 161);
+}
+.p_bottom{
+  flex-wrap: wrap;
+}
+.p_bottom .project_card{
+  flex-basis: 40%;
+}
+.PC_left .p_button{
+  position: absolute;
+  bottom: .1rem;
+  left: .1rem;
+  margin-top: 1rem;
+}
+.PC_right{
+  width: auto;
+}
+@media screen and (max-width:800px) {
+  .PC_left{
+    flex:5;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .PC_right{
+    flex:5;
+  }
+  .PC_right img{
+    height: 230px !important;
+    width: 170px !important;
+  }
+  .p_button{
+    margin-top: 2rem !important;
+  }
+  .p_button button{
+    font-size: .8rem !important;
+  }
+  
+}
+@media screen and (max-width:700px) {
+  
+  .PC_right img{
+    height: 205px !important;
+    width: 140px !important;
+  }
+  .p_button{
+    margin-top: 2rem !important;
+  }
+  .p_title label{
+    font-size: .8rem !important;
+  }
+  .p_button button{
+    font-size: .6rem !important;
+  }
+  
+}
+@media screen and (max-width:650px) {
+  
+  .PC_right img{
+    height: 190px !important;
+    width: 130px !important;
+  }
+  .p_descr label{
+    font-size: .5rem !important;
+  }
+}
+@media screen and (max-width:600px) {
+  
+  .PC_right img{
+    height: 300px !important;
+    width: 250px !important;
+  }
+  .project_card{
+    min-width: 480px !important;
+  }
+  .p_title label{
+    font-size: 1rem !important;
+  }
+  .p_descr span{
+    font-size: .75rem !important;
+  }
+}
+@media screen and (max-width:500px) {
+  
+  .PC_right img{
+    height: 270px !important;
+    width: 220px !important;
+  }
+  .project_card{
+    min-width: 450px !important;
+  }
+}
+@media screen and (max-width:470px) {
+  
+  .PC_right img{
+    height: 270px !important;
+    width: 220px !important;
+  }
+  .project_card{
+    min-width: 400px !important;
+  }
+  .p_title label{
+    font-size: 1rem !important;
+  }
+  .p_descr span{
+    font-size: .55rem !important;
+  }
+}
+@media screen and (max-width:450px) {
+  .p_descr span{
+    font-size: .65rem !important;
+  }
+}
+@media screen and (max-width:430px) {
+  .p_descr span{
+    font-size: .75rem !important;
+  }
+}
+@media screen and (max-width:410px) {
+  .project_card{
+    min-width: 345px !important;
+  }
+  .PC_right img{
+    height: 240px !important;
+    width: 190px !important;
+  }
+  .p_descr span{
+    font-size: .65rem !important;
+  }
+}
+@media screen and (max-width:380px) {
+  .project_card{
+    min-width: 300px !important;
+  }
+  .PC_right img{
+    height: 240px !important;
+    width: 190px !important;
+  }
+  .p_descr span{
+    font-size: .65rem !important;
+  }
+}

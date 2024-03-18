@@ -9,6 +9,8 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { FaSchool } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaDownload } from "react-icons/fa";
+import { motion } from 'framer-motion'
+
 
 const About = () => {
   const {data} = useData();
@@ -16,12 +18,21 @@ const About = () => {
   const handleClick=(btnName)=>{
     setSelected(btnName);
   }
+  const transition= {
+    duration : 0.5,
+    delay : 0.2
+  }
   return (
-    <div className="about">
+    <div
+     className="about">
       <div className="ab_first">
         <img src={Avatar} alt="" />
       </div>
-      <div className="ab_second">
+      <motion.div
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+          transition={transition} 
+      className="ab_second">
         <label htmlFor="" className='pink'>About Me</label>
         <label htmlFor="">6 Month's Experience On</label>
         <label htmlFor="">React <label htmlFor="" className='pink'>Development</label>.</label>
@@ -74,7 +85,7 @@ const About = () => {
         <div className="btn" style={{marginTop:'.5rem'}}>
           <Button component={<FaDownload/>} style={data.waterBtn} btnName={'Download CV'}/>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

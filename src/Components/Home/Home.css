@@ -105,6 +105,9 @@ z-index: 100;
   align-items: center;
   margin-top: -2rem;
 }
+.glassy_emoji{
+  height: 130px !important;
+}
 .third .react_cont{
   height: 60px;
   width: 150px;
@@ -202,6 +205,9 @@ z-index: 100;
   .react_cont{
     width:10rem !important;
   }
+  .glassy_emoji{
+    height: 130px !important;
+  }
 }
 @media screen and (max-width:1300px){
   html{
@@ -213,6 +219,7 @@ z-index: 100;
   .react_cont{
     width:10rem !important;
   }
+
 }
 @media screen and (max-width:1200px){
   html{

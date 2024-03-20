@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import Button from '../Button/Button'
 // import { WaterButton } from '../Button/Button'
-import Avatar from '../../assets/Image/Avatar.png'
+import MyPort1 from '../../assets/Image/MyPort1.svg'
 import GlassyEmoji from '../../assets/Icon/GlassyEmoji.png'
 import ReactIcon from '../../assets/Icon/React.svg'
 import BootstrapIcon from '../../assets/Icon/BootstrapIcon.svg'
@@ -55,7 +55,7 @@ const Home = () => {
           initial={{opacity:0,scale:0}}
           whileInView={{opacity:1,scale:1}}
           transition={transition}
-           src={Avatar} alt="" style={{height:'auto',width:'300px',zIndex:'100'}}/>
+           src={MyPort1} alt="" style={{height:'auto',width:'500px',zIndex:'100'}}/>
         </div>
         <div  className="icon">
             <IconEmoji iconName={GlassyEmoji} position={{top:'-10%',left:'-1%'}} classes={'glassy_emoji'}/>

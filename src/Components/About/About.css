@@ -31,7 +31,7 @@
 }
 .ab_first img{
   height: auto;
-  width: 20rem;
+  width: 30rem;
 }
 .ab_second{
   flex: 5.5;
@@ -112,11 +112,14 @@
 }
 .main_skills{
   margin-top: 1rem;
-  width: 67%;
+  width: 70%;
+}
+.css-14ct2bc-MuiLinearProgress-root{
+  width:99% !important ;
 }
 .main_skills .div{
   display: flex;
-  max-width: 67%;
+  max-width: 98%;
   justify-content: space-between;
 }
 .main_skills div>label{
@@ -192,6 +195,13 @@
 .ab_second>label:nth-child(4) {
   width: 80%;
 }
+.css-14ct2bc-MuiLinearProgress-root{
+  width:99% !important ;
+}
+.main_skills{
+  margin-top: 1rem;
+  width: 99%;
+}
 }
 @media screen and (max-width:550px) {
   .ab_second>label:nth-child(2),.ab_second>label:nth-child(3){
@@ -210,10 +220,28 @@
   .style label{
     font-size: .65rem !important;
   }
+
+}
+@media screen and (max-width:469px) {
+  .btn_grp button{
+    font-size: .5rem !important;
+    padding: .9rem 2rem !important;
+  }
+
+  .style label{
+    font-size: .65rem !important;
+  }
+
 }
 @media screen and (max-width:385px) {
   .btn_grp button{
     font-size: .5rem !important;
   }
-  
+
+}
+@media screen and (max-width:360px) {
+  .btn_grp button{
+    font-size: .4rem !important;
+    padding: .9rem 2rem !important;
+  }
 }

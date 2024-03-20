@@ -21,7 +21,7 @@ const Navigation = () => {
   }, []);
   const [selected,setSelected] = useState('Home')
   function handleWhatsAppClick() {
-    const phoneNumber = '8629952220'; 
+    const phoneNumber = '+918629952220'; 
     const message = 'Hello, Khilesh!'; 
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   }

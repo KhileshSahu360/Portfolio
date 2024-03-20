@@ -74,12 +74,12 @@ const accordionData = [
   {
     icon : MongoDB,
     title : 'MongoDB',
-    descr : 'Now, I am learning Mongo DB. Skill - 30%.'
+    descr : 'Now, I am learning Mongo DB. Skill - 50%.'
   },
   {
     icon : Express ,
     title : 'Express JS',
-    descr : 'Now, I am learning Express JS with Node JS. Skill - 20%'
+    descr : 'Now, I am learning Express JS with Node JS. Skill - 50%'
   },
   {
     icon : ReactIcon,
@@ -89,7 +89,7 @@ const accordionData = [
   {
     icon : Next,
     title : 'Next JS',
-    descr : 'After completing the React I will start learning Next JS'
+    descr : 'After completing the React I will start learning Next JS Skill - 20%'
   },
   {
     icon : Node,

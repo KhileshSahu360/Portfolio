@@ -29,7 +29,7 @@ export default function TemporaryDrawer() {
     setOpen(newOpen);
   };
   function handleWhatsAppClick() {
-    const phoneNumber = '8629952220'; 
+    const phoneNumber = '+918629952220'; 
     const message = 'Hello, Khilesh!'; 
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   }
@@ -75,12 +75,14 @@ export default function TemporaryDrawer() {
                 <LiItem to={'Contact'} text={'Contact'} setSelected={setSelected} selected={selected} toggleclick={toggleDrawer(false)} iconComponent={<MdOutlineContactPhone />}/>    
             </ListItemButton>
           </ListItem>
-      
+          <li>
+            <div className="lets_chat" style={{display:'block',marginTop:'2rem'}}>
+              <button style={{textAlign:'center'}} onClick={handleWhatsAppClick}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></button>
+            </div> 
+          </li>
         {/* ))} */}
         </ul>
-        <div className="lets_chat" style={{display:'block'}}>
-          <button style={{textAlign:'center'}} onClick={handleWhatsAppClick}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></button>
-      </div> 
+     
       </List>
     </Box>
   );

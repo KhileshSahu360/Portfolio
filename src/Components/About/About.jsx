@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Avatar from '../../assets/Image/Avatar.png'
+import MyPort2 from '../../assets/Image/MyPort2.svg'
 import './About.css'
 import Button from '../Button/Button'
 import { useData } from '../Data/Data'
@@ -26,7 +26,7 @@ const About = () => {
     <div
      className="about">
       <div className="ab_first">
-        <img src={Avatar} alt="" />
+        <img src={MyPort2} alt="" />
       </div>
       <motion.div
           initial={{opacity:0}}
@@ -53,14 +53,14 @@ const About = () => {
           <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Future Enhacement</span></div>
         </div>}
         {selected==='Main Skills' && <div className="main_skills flex">
-          <div className="div"><label htmlFor="">Next JS</label><label htmlFor="">50%</label></div>
+          <div className="div"><label htmlFor="">Mongo DB</label><label htmlFor="">50%</label></div>
           <SkillProgressBar value={50}/>
-          <div className="div"><label htmlFor="">React JS</label><label htmlFor="">80%</label></div>
-          <SkillProgressBar value={80}/>
-          <div className="div"><label htmlFor="">Mongo DB</label><label htmlFor="">60%</label></div>
-          <SkillProgressBar value={60}/>
-          <div className="div"><label htmlFor="">Express JS</label><label htmlFor="">70%</label></div>
+          <div className="div"><label htmlFor="">Express JS</label><label htmlFor="">50%</label></div>
+          <SkillProgressBar value={50}/>
+          <div className="div"><label htmlFor="">React JS</label><label htmlFor="">70%</label></div>
           <SkillProgressBar value={70}/>
+          <div className="div"><label htmlFor="">Next JS</label><label htmlFor="">20%</label></div>
+          <SkillProgressBar value={20}/>
         </div>}
         {selected==='Educations' && <div className="educations flex">
           <div className="e_left space">

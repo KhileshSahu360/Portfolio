@@ -4,7 +4,9 @@
     --pink-color : #e6027d;
     --dark-color :#08203a;
   }
-
+html{
+  
+}
 *{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -21,4 +23,7 @@ button:active {
   transform: translateY(-1px) scale(.8);
   transition: all 600ms;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+body{
+  min-width:100vw;
 }

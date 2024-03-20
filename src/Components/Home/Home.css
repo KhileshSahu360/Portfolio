@@ -408,7 +408,7 @@ position: relative;
 }
 @media screen and (max-width:500px) {
   html{
-    font-size: 100%;
+    font-size: 90%;
   }
   .icon>img:nth-child(1) {
     top: -10% !important;
@@ -435,7 +435,7 @@ position: relative;
 }
 @media screen and (max-width:400px) {
   html{
-    font-size: 80%;
+    font-size: 70%;
   }
   .icon>img:nth-child(1) {
     top: -20% !important;
@@ -452,6 +452,6 @@ position: relative;
 }
 @media screen and (max-width:350px) {
   html{
-    font-size: 75%;
+    font-size: 70%;
   }
 }

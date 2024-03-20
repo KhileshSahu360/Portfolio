@@ -381,7 +381,6 @@ position: relative;
   }
   .home{
     grid-template-columns:1fr ;
-    gap: 6rem !important;
     height: 800px;
     padding: 0rem 2rem;
   }
@@ -404,6 +403,7 @@ position: relative;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 0 !important;
+    gap:.2rem;
   }
 }
 @media screen and (max-width:500px) {
@@ -448,6 +448,12 @@ position: relative;
   .bootstrap{
     bottom: -10% !important;
     left: 10% !important;
+  }
+  .second>label:nth-child(3) {
+    font-size:.8rem;
+  }
+  .img_div img{
+    width: 28rem !important;
   }
 }
 @media screen and (max-width:350px) {

@@ -1,5 +1,4 @@
 import React from 'react'
-import './Button.css'
 import KhileshResume from '../../assets/Image/KhileshResume.pdf'
 import { Link } from 'react-scroll';
 

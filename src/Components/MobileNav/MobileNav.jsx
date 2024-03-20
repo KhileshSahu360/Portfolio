@@ -28,6 +28,11 @@ export default function TemporaryDrawer() {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+  function handleWhatsAppClick() {
+    const phoneNumber = '8629952220'; 
+    const message = 'Hello, Khilesh!'; 
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+  }
   const [selected,setSelected] = React.useState('Home');
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
@@ -74,8 +79,8 @@ export default function TemporaryDrawer() {
         {/* ))} */}
         </ul>
         <div className="lets_chat" style={{display:'block'}}>
-          <button style={{textAlign:'center'}}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></button>
-      </div>
+          <button style={{textAlign:'center'}} onClick={handleWhatsAppClick}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></button>
+      </div> 
       </List>
     </Box>
   );

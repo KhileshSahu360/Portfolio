@@ -9,6 +9,8 @@ import BootstrapIcon from '../../assets/Icon/BootstrapIcon.svg'
 import { useData } from '../Data/Data'
 import { FaDownload } from "react-icons/fa";
 import { motion } from 'framer-motion'
+import { FaArrowAltCircleUp } from "react-icons/fa";
+import { Link } from 'react-scroll'
 
 const transition= {
   duration : 0.5,
@@ -41,8 +43,8 @@ const Home = () => {
           </label>
           <div className="button_grp">
            
-              <Button style={data.gradientBtn} btnName={'Hire Me'}/>
-              <Button style={data.waterBtn} btnName={'Download CV'} component={<FaDownload />}/>
+              <Button style={data.gradientBtn} btnName={'Hire Me'} hireme={true}/>
+              <Button style={data.waterBtn} btnName={'Download CV'} component={<FaDownload />} resume={true}/>
            
           </div>
 
@@ -73,6 +75,9 @@ const Home = () => {
               <IconEmoji iconName={BootstrapIcon} position={{height:'50px',bottom:'-10%',left:'16%'}} classes={'bootstrap'}/>
           </motion.div>
         </div>
+      </div>
+      <div className="upword_icon">
+        <Link to='Header' smooth={true} duration={500}><FaArrowAltCircleUp color='white'/></Link>
       </div>
     </div>
   )

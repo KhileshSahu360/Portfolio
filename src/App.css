@@ -17,3 +17,8 @@
     font-weight: 300;
     font-style: normal;
 }
+button:active {
+  transform: translateY(-1px) scale(.8);
+  transition: all 600ms;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}

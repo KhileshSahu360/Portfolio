@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/KhileshSahu360/Portfolio.git",
   "name": "package",
   "private": true,
   "version": "0.0.0",
@@ -19,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-intersection-observer": "^9.8.1",
+    "react-pdf": "^7.7.1",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {

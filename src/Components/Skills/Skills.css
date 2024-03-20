@@ -158,6 +158,14 @@
   height: auto;
   padding: 0px auto !important;
 }
+.accordion:hover{
+  transform: scale(1.2);
+}
+.accordion:hover,
+.accordion:not(:hover) {
+    transition: transform 0.3s;
+}
+
 .title_field{
   display: flex;
   justify-content: center;

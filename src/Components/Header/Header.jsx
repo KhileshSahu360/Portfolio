@@ -10,7 +10,7 @@ const Navigation = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 10) {
-        setSelected('Home') // Change the color to red when scroll position is greater than 200 pixels
+        setSelected('Home') 
       }
     };
 
@@ -20,6 +20,11 @@ const Navigation = () => {
     };
   }, []);
   const [selected,setSelected] = useState('Home')
+  function handleWhatsAppClick() {
+    const phoneNumber = '8629952220'; 
+    const message = 'Hello, Khilesh!'; 
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+  }
   return (
     <nav>
       <div className="logo">
@@ -46,7 +51,7 @@ const Navigation = () => {
         </li>
       </ul>
       <div className="lets_chat">
-        <button style={{textAlign:'center'}}><Link to="Contact" smooth={true} duration={500}  onClick={()=>setSelected('Contact')}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></Link></button>
+        <button style={{textAlign:'center'}} onClick={handleWhatsAppClick}>Let's Chat<BiSolidMessageRoundedDots className='msg_icon'/></button>
       </div>
       <div className="menu_bar">
           <TemporaryDrawer style={{color:' red'}}/>

@@ -63,7 +63,7 @@ const Skills = () => {
        className="sk_bottom">
           {
             sklData.map((elm)=>{
-              return <AccordionExpandDefault icon={elm.icon} title={elm.title} descr={elm.descr}/>            })
+              return <AccordionExpandDefault key={elm.title} icon={elm.icon} title={elm.title} descr={elm.descr}/>            })
           }
       </motion.div>
     </div>

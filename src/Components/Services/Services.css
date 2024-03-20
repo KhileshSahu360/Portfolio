@@ -73,6 +73,14 @@
 );
 
 }
+.card:hover{
+  transform: scale(1.125);
+}
+.card:hover,
+.card:not(:hover) {
+    transition: transform 0.3s;
+}
+
 .card .icon label{
   height: 2.5rem;
   width: 2.5rem;

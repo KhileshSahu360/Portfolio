@@ -12,12 +12,15 @@ const transition= {
 }
 
 const Contact = () => {
-  const firesRef = useRef('');
+  const firstRef = useRef('');
   const lastRef = useRef('');
   const emailRef = useRef('');
   const subjectRef = useRef('');
   const messageRef = useRef('');
   const {data} = useData();
+  const handleSubmit = (event) =>{
+
+  }
   return (
     <div className='contact'>
       <motion.div
@@ -28,30 +31,32 @@ const Contact = () => {
         <TitleHeading title={'Contact Me'} heading={'Get in Touch With Me.'}/>
       </motion.div>
       <div className="c_bottom">
-        <motion.div
+        <motion.form 
         initial={{x:'-50%',opacity:0}}
         whileInView={{x:'0%',opacity:1}}
         transition={transition}
-         className="cb_left">
+        action='https://formspree.io/f/xleqwlen' method='post'
+        onSubmit={handleSubmit}
+        className="cb_left">
           <div className='firstlast_name'>
-            <input type="text" placeholder='First Name' ref={firesRef}/>
-            <input type="text" placeholder='Last Name' ref={lastRef}/>
+            <input type="text" placeholder='First Name' ref={firstRef} name="last_name" required/>
+            <input type="text" placeholder='Last Name' ref={lastRef} name='first_name'/>
           </div>
           <div className='email'>
-            <input type="email" placeholder='Email' ref={emailRef}/>
+            <input type="email" placeholder='Email' ref={emailRef} name='email' required/>
           </div>
           <div className='subject'>
-            <input type="text" placeholder='Subject' ref={subjectRef}/>
+            <input type="text" placeholder='Subject' ref={subjectRef} name='subject'/>
           </div>
           <div className='message'>
-            <textarea placeholder='Message' ref={messageRef} name="" id="" cols="5" rows="2"></textarea>
+            <textarea placeholder='Message' ref={messageRef} name="message" id="" cols="5" rows="2" required></textarea>
           </div>
           <div className='button'>
             <Button btnName={'Submit Now'} style={{...data.gradientBtn,borderRadius:'5px'}}/>
           </div>
-        </motion.div>
+        </motion.form>
         <motion.div
-        initial={{x:'50%',opacity:0}}
+        initial={{x:'-50%',opacity:0}}
         whileInView={{x:'0%',opacity:1}}
         transition={transition}
          className="cb_right">

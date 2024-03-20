@@ -83,7 +83,7 @@ const About = () => {
           </div>
         </div>}
         <div className="btn" style={{marginTop:'.5rem'}}>
-          <Button component={<FaDownload/>} style={data.waterBtn} btnName={'Download CV'}/>
+          <Button component={<FaDownload/>} style={data.waterBtn} resume={true} btnName={'Download CV'}/>
         </div>
       </motion.div>
     </div>

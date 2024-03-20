@@ -14,7 +14,9 @@ import Footer from './Components/Footer/Footer';
 const App = () => {
   return (
     <ButtonData>
-      <Header/>
+      <Element name="Header">
+        <Header/>
+      </Element>
       <Element name="Home">
         <Home />
       </Element>

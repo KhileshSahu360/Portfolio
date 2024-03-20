@@ -59,6 +59,14 @@
   );
 
 }
+.project_card:hover{
+  transform: scale(1.125);
+}
+.project_card:hover,
+.project_card:not(:hover) {
+    transition: transform 0.3s;
+}
+
 .PC_left{
   flex:7;
   display: flex;

@@ -53,14 +53,14 @@ const About = () => {
           <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Future Enhacement</span></div>
         </div>}
         {selected==='Main Skills' && <div className="main_skills flex">
-          <div className="div"><label htmlFor="">Mongo DB</label><label htmlFor="">50%</label></div>
-          <SkillProgressBar value={50}/>
-          <div className="div"><label htmlFor="">Express JS</label><label htmlFor="">50%</label></div>
-          <SkillProgressBar value={50}/>
-          <div className="div"><label htmlFor="">React JS</label><label htmlFor="">70%</label></div>
-          <SkillProgressBar value={70}/>
-          <div className="div"><label htmlFor="">Next JS</label><label htmlFor="">20%</label></div>
-          <SkillProgressBar value={20}/>
+          <div className="div"><label htmlFor="">Mongo DB</label><label htmlFor="">90%</label></div>
+          <SkillProgressBar value={90}/>
+          <div className="div"><label htmlFor="">Express JS</label><label htmlFor="">80%</label></div>
+          <SkillProgressBar value={80}/>
+          <div className="div"><label htmlFor="">React JS</label><label htmlFor="">80%</label></div>
+          <SkillProgressBar value={80}/>
+          <div className="div"><label htmlFor="">Node JS</label><label htmlFor="">80%</label></div>
+          <SkillProgressBar value={80}/>
         </div>}
         {selected==='Educations' && <div className="educations flex">
           <div className="e_left space">

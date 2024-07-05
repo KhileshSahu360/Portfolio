@@ -4,6 +4,7 @@ import TodoList from '../../assets/Image/TodoList.png'
 import Weather from '../../assets/Image/Weather.png'
 import News360 from '../../assets/Image/News360.png'
 import LibraryManagement from '../../assets/Image/LibraryManagement.png'
+import EngineerLink from '../../assets/Image/EngineerLink.png'
 import BootstrapIcon from '../../assets/Icon/BootstrapIcon.svg'
 import MongoDB from '../../assets/Icon/MongoDB.svg'
 import ReactIcon from '../../assets/Icon/React.svg'
@@ -68,23 +69,35 @@ const projectCardData = [
     descr : 'Efficiently manage your library with our Library Management System. Keep track of books, borrowers, and transactions seamlessly. Simplify library operations today!',
     url : '',
     image : LibraryManagement
+  },
+  {
+    name : 'Engineer Link',
+    title : 'Engineer Link Responsive App',
+    descr : 'Engineer Link is the real time social media platform where engineer can connect and collaborate with each others! user can chat with the real time chat app',
+    url : 'https://egineerLink.onrender.com',
+    image : EngineerLink
   }
 ]
 const accordionData = [
   {
     icon : MongoDB,
     title : 'MongoDB',
-    descr : 'Now, I am learning Mongo DB. Skill - 50%.'
+    descr : 'sufficient understanding of mongodb, still learning Mongo DB. Skill - 90%.'
   },
   {
     icon : Express ,
     title : 'Express JS',
-    descr : 'Now, I am learning Express JS with Node JS. Skill - 50%'
+    descr : 'good knowledge on api creating and express, still learning Express JS with Node JS. Skill - 80%'
   },
   {
     icon : ReactIcon,
     title : 'React JS',
-    descr : 'I am good in React. I know almost all concept of React. Skill - 70%'
+    descr : 'I am good in React. I know almost all concept of React. Skill - 80%'
+  },
+  {
+    icon : Node,
+    title : 'Node JS',
+    descr : 'I am good on Node JS. Skill - 80%'
   },
   {
     icon : Next,
@@ -92,14 +105,9 @@ const accordionData = [
     descr : 'After completing the React I will start learning Next JS Skill - 20%'
   },
   {
-    icon : Node,
-    title : 'Node JS',
-    descr : 'Currently, I am learning Node JS. Skill - 50%'
-  },
-  {
     icon : HTML,
     title : 'HTML',
-    descr : 'I hava deep understanding in HTML. Skills - 90%'
+    descr : 'I hava deep understanding in HTML. Skills - 100%'
   },
   {
     icon : CSS,
@@ -119,7 +127,7 @@ const accordionData = [
   {
     icon : Tailwind,
     title : 'Tailwind',
-    descr : 'I use Tailwind CSS but little-bit. I am learning Tailwind CSS. Skills - 30%'
+    descr : 'I have good knowledge of tailwind css. currently my latest project designed with Tailwind CSS. Skills - 70%'
   },
   {
     icon : PHP,

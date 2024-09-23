@@ -5,6 +5,7 @@ import Weather from '../../assets/Image/Weather.png'
 import News360 from '../../assets/Image/News360.png'
 import LibraryManagement from '../../assets/Image/LibraryManagement.png'
 import EngineerLink from '../../assets/Image/EngineerLink.png'
+import ExpenseTracker from '../../assets/Image/ExpenseTracker.png'
 import BootstrapIcon from '../../assets/Icon/BootstrapIcon.svg'
 import MongoDB from '../../assets/Icon/MongoDB.svg'
 import ReactIcon from '../../assets/Icon/React.svg'
@@ -43,22 +44,36 @@ const waterBtn = {
 
 const projectCardData = [
   {
+    name : 'Engineer Link',
+    title : 'Engineer Link MERN App',
+    descr : 'Engineer Link is the real time social media platform where engineer can connect and collaborate with each others! user can chat with the real time chat app',
+    url : 'https://egineerLink.onrender.com',
+    image : EngineerLink
+  },
+  {
+    name : 'Expense Tracker',
+    title : 'Expense Tracker MERN App',
+    descr : 'Expense Tracker is a finance management tool where users can create budgets and track expenses. Users can log spending, view budget balances in real-time, and manage their finances efficiently.',
+    url : 'https://expensetracker-ev7r.onrender.com/',
+    image : ExpenseTracker
+  },
+  {
     name : 'Todo List',
-    title : 'Todo-List Responsive App',
+    title : 'Todo-List REACT App',
     descr : 'Introducing a sleek and intuitive to-do list app, designed to help you stay organized and productive. Manage your tasks effortlessly and prioritize your day with ease',
     url : 'https://todolist-hf0t.onrender.com',
     image : TodoList
   },
   {
     name : 'Weather',
-    title : 'Weather Responsive App',
+    title : 'Weather React App',
     descr : 'Stay ahead of the weather with My Weather App. Seamlessly designed to provide with up-to-date forecasts, detailed weather information. Check Now!',
     url : 'https://weatherbykhilesh.onrender.com',
     image : Weather
   },
   {
     name : 'News360',
-    title : 'News360 Responsive App',
+    title : 'News360 React App',
     descr : 'Get the latest scoop with our News App. Stay informed with breaking news, personalized articles, and a seamless reading experience, all in one place.Check Now for Free',
     url : 'https://khileshnews360.onrender.com',
     image : News360
@@ -69,13 +84,6 @@ const projectCardData = [
     descr : 'Efficiently manage your library with our Library Management System. Keep track of books, borrowers, and transactions seamlessly. Simplify library operations today!',
     url : '',
     image : LibraryManagement
-  },
-  {
-    name : 'Engineer Link',
-    title : 'Engineer Link Responsive App',
-    descr : 'Engineer Link is the real time social media platform where engineer can connect and collaborate with each others! user can chat with the real time chat app',
-    url : 'https://egineerLink.onrender.com',
-    image : EngineerLink
   }
 ]
 const accordionData = [

@@ -6,7 +6,7 @@ import { skillsData } from '../Data/Data'
 import { TbCircleDot } from "react-icons/tb";
 import MongoDB from '../../assets/Icon/MongoDB.svg'
 import ReactIcon from '../../assets/Icon/React.svg'
-import Next from '../../assets/Icon/Next.svg'
+import Node from '../../assets/Icon/Node.svg'
 import Express from '../../assets/Icon/Express.svg'
 import { motion } from 'framer-motion'
 const transition= {
@@ -53,7 +53,7 @@ const Skills = () => {
           <div className='mernicon m_icon'><img src={MongoDB} style={mernStyle} alt="" /></div>
           <div className='mernicon e_icon'><img src={Express} style={mernStyle} alt="" /></div>
           <div className='mernicon r_icon'><img src={ReactIcon} style={mernStyle} alt="" /></div>
-          <div className='mernicon n_icon'><img src={Next} style={mernStyle} alt="" /></div>
+          <div className='mernicon n_icon'><img src={Node} style={mernStyle} alt="" /></div>
         </motion.div>
       </div>
       <motion.div

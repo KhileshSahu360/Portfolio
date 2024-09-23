@@ -47,7 +47,7 @@ const About = () => {
           <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Introduction</span></div>
           <div><TbCircleDot color={'#e6027d'} fontSize={'.8rem'}/><label htmlFor="">I have 6 months of hands-on experience in building web applications using the MERN stack.</label></div>
           <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Experience</span></div>
-          <div><TbCircleDot color={'#e6027d'} fontSize={'.8rem'}/><label htmlFor="">Developed several web applications, including a to-do list app, a weather app, and a News App.</label></div>
+          <div><TbCircleDot color={'#e6027d'} fontSize={'.8rem'}/><label htmlFor="">Developed several web applications, including a EngineerLink, Expense Tracker, weather app, and a News App.</label></div>
           <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Project's</span></div>
           <div><TbCircleDot color={'#e6027d'} fontSize={'.8rem'}/><label htmlFor="">Continuously learning and exploring new technologies to enhance my skills.</label></div>
           <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Future Enhacement</span></div>

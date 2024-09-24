@@ -84,7 +84,7 @@ const projectCardData = [
     descr : 'Efficiently manage your library with our Library Management System. Keep track of books, borrowers, and transactions seamlessly. Simplify library operations today!',
     url : '',
     image : LibraryManagement
-  }
+  },
 ]
 const accordionData = [
   {

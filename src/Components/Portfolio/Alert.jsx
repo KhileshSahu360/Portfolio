@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
-export default function CustomizedSnackbars({open, setOpen}) {
+export default function CustomizedSnackbars({open, setOpen, text}) {
 
 
 
@@ -24,7 +24,7 @@ export default function CustomizedSnackbars({open, setOpen}) {
           variant="filled"
           sx={{ width: '100%' }}
         >
-          Sorry! This Project has been not Deployed!
+          {text}
         </Alert>
       </Snackbar>
     </div>

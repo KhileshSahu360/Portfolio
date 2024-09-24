@@ -17,7 +17,6 @@ const ProjectCard = (props) => {
   const handleClick = (url) => {
     if(url===''){
         setOpen(true);
-        console.log('clicking....');
       }else{
         window.open(url,'_blank')
       }
@@ -44,7 +43,7 @@ const ProjectCard = (props) => {
         <div className="PC_right">
           <img src={props.image} alt="" style={{height:'260px',width:'200px',borderRadius:'10px'}} />
         </div>
-        <CustomizedSnackbars open={open} setOpen={setOpen}/>
+        <CustomizedSnackbars text={'Sorry! This Project has been not Deployed!'} open={open} setOpen={setOpen}/>
 
     </div>
     </>

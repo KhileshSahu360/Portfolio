@@ -28,6 +28,11 @@
   align-items: center;
   flex:1;
 }
+.load_more_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .p_bottom{
   display: flex;
   justify-content: center;

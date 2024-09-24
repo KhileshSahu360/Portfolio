@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { TitleHeading } from '../Services/Services'
 import './Portfolio.css'
-import Card from '../Services/Card'
 import ProjectCard from './ProjectCard'
 import { projectData } from '../Data/Data'
 import { motion } from 'framer-motion'
+import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { useData } from '../Data/Data'
+import Button  from '../Button/Button'
+import CustomizedSnackbars from './Alert'
 const transition= {
   duration : 0.5,
   delay : 0.2
@@ -13,6 +16,15 @@ const transition= {
 
 const Portfolio = () => {
   const projectCardData = projectData(); 
+  const [count, setCount] = useState(4);
+  const [open, setOpen] = useState(false);
+  const { data } = useData();
+  
+  const handleClick = () => {
+    if(count >= projectCardData.length) setOpen(true)
+    
+    setCount((prev)=> prev + 4)
+  }
   return (
     <div className="portfolio">
       <motion.div
@@ -24,10 +36,14 @@ const Portfolio = () => {
       </motion.div>
       <div
        className="p_bottom">
-        {projectCardData.map((elm)=>{
+        {projectCardData.slice(0,count).map((elm)=>{
           return <ProjectCard key={elm.name} name={elm.name} title={elm.title} descr={elm.descr} image={elm.image} url={elm.url}/>
         })}
       </div>
+      <div className='p_button load_more_btn'>
+          <Button btnName={"Load More"} loadMore={true} handleClick={handleClick}  style={{...data.waterBtn,padding:'.5rem 1rem',marginTop:'.6rem',display:'flex',alignItems:'center',gap:'.1rem'}} component={<RiArrowDownDoubleLine />} />
+      </div>
+      <CustomizedSnackbars text={'No More Project!'} open={open} setOpen={setOpen}/>
     </div>
   )
 }
